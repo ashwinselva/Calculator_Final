@@ -11,6 +11,10 @@ A simple Python calculator with persistent history, file-based logging, and colo
 - Custom exception handling
 - Input validation
 
+## Sample output
+
+![Sample output](output.png)
+
 ## How to Run
 
 ### Setup
