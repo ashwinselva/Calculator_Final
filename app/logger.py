@@ -1,9 +1,12 @@
 import os
 from datetime import datetime
+from typing import Optional
 
 
 class Logger:
-    def __init__(self, log_file: str = None):
+    log_file: str
+    
+    def __init__(self, log_file: Optional[str] = None) -> None:
         """Initialize logger with optional file path."""
         if log_file is None:
             # Default to logs directory in the app folder
