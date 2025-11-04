@@ -1,6 +1,7 @@
 from . import history, logger
 from .operations import Operations
 from .input_validators import is_number
+from .colors import print_info, print_success, print_error, print_warning, Colors, highlight
 from .exceptions import (
     InvalidInputError, InvalidOperationError, 
     DivisionByZeroError, InvalidRootError, OperationError
@@ -24,30 +25,30 @@ from .exceptions import (
 
 def perform_operation() -> None:
     try:
-        a_input = input("Enter the first number (a): ")
+        a_input = input(f"{Colors.INFO}Enter the first number (a): {Colors.RESET}")
         if not is_number(a_input):
             raise InvalidInputError("Invalid input for the first number. Please enter a valid number.")
         a = float(a_input)
         
-        b_input = input("Enter the second number (b): ")
+        b_input = input(f"{Colors.INFO}Enter the second number (b): {Colors.RESET}")
         if not is_number(b_input):
             raise InvalidInputError("Invalid input for the second number. Please enter a valid number.")
         b = float(b_input)
         
-        print("\nSelect operation:")
-        print("1) Addition (a + b)")
-        print("2) Subtraction (a - b)")
-        print("3) Multiplication (a * b)")
-        print("4) Division (a / b)")
-        print("5) Power (a ** b)")
-        print("6) Root (b-th root of a)")
-        print("7) Modulus (a % b)")
-        print("8) Integer Division (a // b)")
-        print("9) Percentage (a% of b)")
-        print("10) Absolute Difference |a - b|")
+        print_info("\nSelect operation:")
+        print(f"{Colors.SUCCESS}1){Colors.RESET} Addition (a + b)")
+        print(f"{Colors.SUCCESS}2){Colors.RESET} Subtraction (a - b)")
+        print(f"{Colors.SUCCESS}3){Colors.RESET} Multiplication (a * b)")
+        print(f"{Colors.SUCCESS}4){Colors.RESET} Division (a / b)")
+        print(f"{Colors.SUCCESS}5){Colors.RESET} Power (a ** b)")
+        print(f"{Colors.SUCCESS}6){Colors.RESET} Root (b-th root of a)")
+        print(f"{Colors.SUCCESS}7){Colors.RESET} Modulus (a % b)")
+        print(f"{Colors.SUCCESS}8){Colors.RESET} Integer Division (a // b)")
+        print(f"{Colors.SUCCESS}9){Colors.RESET} Percentage (a% of b)")
+        print(f"{Colors.SUCCESS}10){Colors.RESET} Absolute Difference |a - b|")
         
         try:
-            op_choice = int(input("Choose operation (1-10): "))
+            op_choice = int(input(f"{Colors.INFO}Choose operation (1-10): {Colors.RESET}"))
         except ValueError:
             raise InvalidOperationError("Operation choice must be an integer between 1 and 10.")
         
@@ -78,19 +79,19 @@ def perform_operation() -> None:
         operation_name = operation_names.get(op_choice, "Unknown")
         logger.log(a, b, operation_name, result)
         
-        print(f"Result: {result}")
+        print_success(f"Result: {highlight(str(result))}")
         
     except InvalidInputError as e:
-        print(f"Input Error: {e}")
+        print_error(f"Input Error: {e}")
     except InvalidOperationError as e:
-        print(f"Operation Error: {e}")
+        print_error(f"Operation Error: {e}")
     except DivisionByZeroError as e:
-        print(f"Math Error: {e}")
+        print_error(f"Math Error: {e}")
     except InvalidRootError as e:
-        print(f"Math Error: {e}")
+        print_error(f"Math Error: {e}")
     except OperationError as e:
-        print(f"Calculation Error: {e}")
+        print_error(f"Calculation Error: {e}")
     except Exception as e:
-        print(f"Unexpected Error: {e}")
+        print_error(f"Unexpected Error: {e}")
 
 
