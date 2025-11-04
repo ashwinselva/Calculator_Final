@@ -84,9 +84,10 @@ tests/
 ## Output Examples
 
 ### Main Menu
+
 ```
 ============================================================
-                     Simple Calculator                      
+                     Simple Calculator
 ============================================================
 
 ℹ Type a menu number to interact. Type '9' or 'q' to quit.
@@ -101,15 +102,16 @@ Menu:
 7) Save History
 8) Load History
 9) Exit
-ℹ Choose a number: 
+ℹ Choose a number:
 ```
 
 ### Calculation Flow
+
 ```
 ℹ Enter the first number (a): 10
 ℹ Enter the second number (b): 5
 
-ℹ 
+ℹ
 Select operation:
 1) Addition (a + b)
 2) Subtraction (a - b)
@@ -126,42 +128,3 @@ Select operation:
 [2025-11-03 22:23:04] LOG: Performed Addition on 10.0 and 5.0 with result 15.0
 ✓ Result: 15.0
 ```
-
-### History Display
-```
-ℹ 
-Calculation history:
-  a         b         Result
-──────────────────────────────
-  10.00     5.00         15.00
-  20.00     4.00          5.00
-  50.00     2.00          25.00
-```
-
-### Success Messages
-```
-✓ History cleared.
-✓ Loaded 3 entries from history
-✓ Goodbye!
-```
-
-### Error Messages
-```
-✗ Input Error: Invalid input for the first number. Please enter a valid number.
-✗ Operation Error: Invalid operation choice: 15. Please choose between 1 and 10.
-✗ Math Error: Cannot divide by zero. Error: division by zero
-```
-
-## Test Coverage
-
-- **Total Coverage**: 92.93%
-- **Tests Passing**: 92/92 ✅
-- **100% Coverage Modules**: operations.py, exceptions.py, input_validators.py, colors.py, help.py, __init__.py
-
-## Dependencies
-
-- pytest >= 7.0
-- pytest-cov >= 4.0.0
-- coverage >= 7.0
-- pandas >= 2.0.0
-- colorama >= 0.4.6
