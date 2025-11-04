@@ -1,4 +1,4 @@
-from . import history
+from . import history, logger
 from .operations import Operations
 from .input_validators import is_number
 
@@ -48,8 +48,21 @@ def perform_operation() -> None:
     if op_choice not in [1,2,3,4,5,6,7,8,9,10]:
         print("Invalid operation choice.")
         return
+    
+    # Operation names mapping
+    operation_names = {
+        1: "Addition", 2: "Subtraction", 3: "Multiplication", 4: "Division",
+        5: "Power", 6: "Root", 7: "Modulus", 8: "Integer Division",
+        9: "Percentage", 10: "Absolute Difference"
+    }
+    
     result = ops.operations[op_choice](a, b)
     history.add_entry(a, b, result)
+    
+    # Log the operation
+    operation_name = operation_names.get(op_choice, "Unknown")
+    logger.log(a, b, operation_name, result)
+    
     print(f"Result: {result}")
 
 
