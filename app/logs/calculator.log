@@ -1,6 +1,14 @@
-[2025-11-03 21:56:20] LOG: Performed Addition on 10.0 and 5.0 with result 15.0
-[2025-11-03 21:56:32] LOG: Performed Subtraction on 8.0 and 2.0 with result 6.0
-[2025-11-03 21:56:32] LOG: Performed Division on 20.0 and 4.0 with result 5.0
-[2025-11-03 21:57:16] LOG: Performed Addition on 2.0 and 3.0 with result 5.0
-[2025-11-03 22:21:41] LOG: Performed Addition on 2.0 and 3.0 with result 5.0
-[2025-11-03 22:23:04] LOG: Performed Multiplication on 5.0 and 3.0 with result 15.0
+[2025-11-03 22:31:49] LOG: Performed Addition on 5.0 and 3.0 with result 8.0
+[2025-11-03 22:31:49] LOG: Performed Subtraction on 10.0 and 3.0 with result 7.0
+[2025-11-03 22:31:49] LOG: Performed Multiplication on 5.0 and 6.0 with result 30.0
+[2025-11-03 22:31:49] LOG: Performed Division on 10.0 and 2.0 with result 5.0
+[2025-11-03 22:31:49] LOG: Performed Power on 2.0 and 3.0 with result 8.0
+[2025-11-03 22:31:49] LOG: Performed Root on 8.0 and 3.0 with result 2.0
+[2025-11-03 22:31:49] LOG: Performed Modulus on 10.0 and 3.0 with result 1.0
+[2025-11-03 22:31:49] LOG: Performed Integer Division on 10.0 and 3.0 with result 3.0
+[2025-11-03 22:31:49] LOG: Performed Percentage on 50.0 and 100.0 with result 50.0
+[2025-11-03 22:31:49] LOG: Performed Absolute Difference on 5.0 and 3.0 with result 2.0
+[2025-11-03 22:31:49] LOG: Performed Division on inf and 2.0 with result inf
+[2025-11-03 22:31:49] LOG: Performed Addition on 5.0 and 3.0 with result 8.0
+[2025-11-03 22:31:49] LOG: Performed Addition on 5.0 and 3.0 with result 8.0
+[2025-11-03 22:31:49] LOG: Performed Addition on 5.0 and 3.0 with result 8.0
