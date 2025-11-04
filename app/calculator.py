@@ -2,6 +2,8 @@ from .operations import Operations
 from .calculation import perform_operation
 from .help import show_help
 from . import history
+from .help import show_menu
+
 
 def main() -> None:    
 
@@ -9,13 +11,8 @@ def main() -> None:
     print("Simple calculator. Type a menu number to interact. Type '4' or 'q' to quit.")
 
     while True:
-        print("\nMenu:")
-        print("1) Perform calculation")
-        print("2) Help")
-        print("3) History")
-        print("4) Exit")
-
-        choice = input("Choose (1/2/3/4): ").strip().lower()
+        show_menu()
+        choice = input("Choose a number: ").strip().lower()
 
         if choice in ['9', 'q']:
             print("Goodbye!")
