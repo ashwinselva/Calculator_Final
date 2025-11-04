@@ -1,9 +1,9 @@
 """Basic arithmetic operations mapping."""
-from typing import Callable, Dict
+from typing import Callable, Dict, Optional
 
 
 class Operations:
-    def __init__(self, options=None, a=None, b=None):
+    def __init__(self, options: Optional[dict] = None, a: Optional[float] = None, b: Optional[float] = None) -> None:
         self.operations: Dict[int, Callable[[float, float], float]] = {
             1: self.add,
             2: self.sub,

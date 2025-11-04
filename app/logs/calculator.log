@@ -1,14 +1,15 @@
-[2025-11-03 22:53:41] LOG: Performed Addition on 5.0 and 3.0 with result 8.0
-[2025-11-03 22:53:41] LOG: Performed Subtraction on 10.0 and 3.0 with result 7.0
-[2025-11-03 22:53:41] LOG: Performed Multiplication on 5.0 and 6.0 with result 30.0
-[2025-11-03 22:53:41] LOG: Performed Division on 10.0 and 2.0 with result 5.0
-[2025-11-03 22:53:41] LOG: Performed Power on 2.0 and 3.0 with result 8.0
-[2025-11-03 22:53:41] LOG: Performed Root on 8.0 and 3.0 with result 2.0
-[2025-11-03 22:53:41] LOG: Performed Modulus on 10.0 and 3.0 with result 1.0
-[2025-11-03 22:53:41] LOG: Performed Integer Division on 10.0 and 3.0 with result 3.0
-[2025-11-03 22:53:41] LOG: Performed Percentage on 50.0 and 100.0 with result 50.0
-[2025-11-03 22:53:41] LOG: Performed Absolute Difference on 5.0 and 3.0 with result 2.0
-[2025-11-03 22:53:41] LOG: Performed Division on inf and 2.0 with result inf
-[2025-11-03 22:53:41] LOG: Performed Addition on 5.0 and 3.0 with result 8.0
-[2025-11-03 22:53:41] LOG: Performed Addition on 5.0 and 3.0 with result 8.0
-[2025-11-03 22:53:41] LOG: Performed Addition on 5.0 and 3.0 with result 8.0
+[2025-11-03 23:00:30] LOG: Performed Addition on 5.0 and 3.0 with result 8.0
+[2025-11-03 23:00:30] LOG: Performed Subtraction on 10.0 and 3.0 with result 7.0
+[2025-11-03 23:00:30] LOG: Performed Multiplication on 5.0 and 6.0 with result 30.0
+[2025-11-03 23:00:30] LOG: Performed Division on 10.0 and 2.0 with result 5.0
+[2025-11-03 23:00:30] LOG: Performed Power on 2.0 and 3.0 with result 8.0
+[2025-11-03 23:00:30] LOG: Performed Root on 8.0 and 3.0 with result 2.0
+[2025-11-03 23:00:30] LOG: Performed Modulus on 10.0 and 3.0 with result 1.0
+[2025-11-03 23:00:30] LOG: Performed Integer Division on 10.0 and 3.0 with result 3.0
+[2025-11-03 23:00:30] LOG: Performed Percentage on 50.0 and 100.0 with result 50.0
+[2025-11-03 23:00:30] LOG: Performed Absolute Difference on 5.0 and 3.0 with result 2.0
+[2025-11-03 23:00:30] LOG: Performed Division on inf and 2.0 with result inf
+[2025-11-03 23:00:30] LOG: Performed Addition on 5.0 and 3.0 with result 8.0
+[2025-11-03 23:00:30] LOG: Performed Addition on 5.0 and 3.0 with result 8.0
+[2025-11-03 23:00:30] LOG: Performed Addition on 5.0 and 3.0 with result 8.0
+[2025-11-03 23:00:56] LOG: Performed Root on 1.0 and 3.0 with result 1.0
